@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acasă - Sănătate și Nutriție</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+    
+        body {
+            /* LINK PENTRU POZA DE FUNDAL 1 (ACASĂ) - ÎNLOCUIEȘTE AICI */
+            background-image: url('LINK_PENTRU_POZA_DE_FUNDAL_1');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+            line-height: 1.6;
+        }
+
+       
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+        main {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            min-height: 100vh;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+   
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+  
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+      
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+      
+        .media-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .media-container video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+    
+        .references {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-left: 4px solid #ff6b6b;
+        }
+
+        .references a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('acasa')">Acasă</a></li>
+            <li><a href="#" onclick="showPage('sfaturi')">Sfaturi</a></li>
+            <li><a href="#" onclick="showPage('alimentatie')">Alimentație</a></li>
+        </ul>
+    </nav>
+
+  
+    <main id="acasa" class="page active">
+        <h1>Bine ați venit pe site-ul nostru de sănătate și nutriție!</h1>
+        <div class="image-container">
+          
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa_clsdeBB_K8q-YZIc2KFdAtfvW2rMpqqzQ&s" alt="Logo Sănătate">
+        </div>
+        <p>Sănătatea și nutriția sunt două aspecte fundamentale ale vieții noastre. O alimentație echilibrată și un stil de viață sănătos ne pot ajuta să prevenim multe boli și să ne menținem energia și vitalitatea pe termen lung. Pe acest site, vei găsi informații utile despre cum să îți îmbunătățești obiceiurile alimentare, sfaturi practice pentru o viață sănătoasă și ghiduri detaliate despre nutriție.</p>
+        <p>Unul dintre cele mai importante aspecte ale unei vieți sănătoase este hidratarea. Apa joacă un rol esențial în menținerea funcțiilor corporale, de la digestie până la reglarea temperaturii corpului. Specialiștii recomandă consumul a cel puțin 2 litri de apă pe zi, dar această cantitate poate varia în funcție de activitatea fizică și de condițiile climatice.</p>
+        <p>Pe lângă alimentație, activitatea fizică regulată este esențială pentru menținerea sănătății. Exercițiile fizice nu doar că ne ajută să ne menținem greutatea sub control, dar au și un impact pozitiv asupra stării noastre mentale. Chiar și o plimbare zilnică de 30 de minute poate face o diferență semnificativă în calitatea vieții noastre.</p>
+
+        <h2>Beneficiile unei alimentații sănătoase</h2>
+        <table>
+            <tr>
+                <th>Beneficiu</th>
+                <th>Descriere</th>
+            </tr>
+            <tr>
+                <td>Energie crescută</td>
+                <td>O alimentație echilibrată asigură nutrienții necesari pentru a menține un nivel ridicat de energie pe tot parcursul zilei.</td>
+            </tr>
+            <tr>
+                <td>Imunitate întărită</td>
+                <td>Consumul de fructe și legume bogate în vitamine și minerale ajută la întărirea sistemului imunitar.</td>
+            </tr>
+            <tr>
+                <td>Sănătate mintală îmbunătățită</td>
+                <td>Alimentele bogate în omega-3 și antioxidanți au un efect pozitiv asupra funcțiilor cognitive.</td>
+            </tr>
+            <tr>
+                <td>Greutate sănătoasă</td>
+                <td>O dietă echilibrată ajută la menținerea unei greutăți corporale sănătoase.</td>
+            </tr>
+        </table>
+
+        <div class="references">
+            <p>Pentru mai multe informații despre beneficiile unei alimentații sănătoase, vizitați <a href="https://www.who.int/health-topics/nutrition" target="_blank">Organizația Mondială a Sănătății - Nutriție</a>.</p>
+        </div>
+    </main>
+
+    <!-- Pagina Sfaturi -->
+    <main id="sfaturi" class="page">
+        <h1>Sfaturi pentru o viață sănătoasă</h1>
+        <div class="image-container">
+            
+            <img src="https://api.nutritie-si-stil-de-viata.ro/uploads/2026/03/7748aebf-f3f4-4c76-9fe3-82375c75d268.jpg" alt="Sfaturi Sănătoase">
+        </div>
+        <p>Adoptarea unui stil de viață sănătos nu trebuie să fie complicată. Există multe obiceiuri simple pe care le poți integra în rutina ta zilnică pentru a te simți mai bine și a îmbunătăți sănătatea pe termen lung. Un primul pas important este să îți stabilești obiective realiste și să le urmezi cu consecvență.</p>
+        <p>Unul dintre cele mai eficiente sfaturi pentru o viață sănătoasă este să dormi suficient. Somnul are un rol crucial în refacerea organismului și în menținerea echilibrului mental. Lipsa somnului poate duce la oboseală cronică, scăderea concentrației și chiar la probleme de sănătate pe termen lung. Specialiștii recomandă între 7 și 9 ore de somn pe noapte pentru un adult.</p>
+        <p>Un alt aspect important este gestionarea stresului. Tehnicile de relaxare, cum ar fi meditația, yoga sau chiar respirația profundă, pot ajuta la reducerea nivelului de stres și la îmbunătățirea stării generale de bine. Găsirea unui hobby care îți aduce bucurie poate fi, de asemenea, un mod excelent de a te relaxa și de a te deconecta de la stresul zilnic.</p>
+
+        <h2>Lista de sfaturi pentru o viață sănătoasă</h2>
+        <ol>
+            <li>Bea suficientă apă în fiecare zi.</li>
+            <li>Mănâncă cel puțin 5 porții de fructe și legume zilnic.</li>
+            <li>Fă mișcare regulată, chiar și o plimbare scurtă contează.</li>
+            <li>Dormi suficient și respectă un program de somn regulat.</li>
+            <li>Practică tehnici de relaxare pentru a gestiona stresul.</li>
+            <li>Evită consumul excesiv de alcool și tutun.</li>
+            <li>Menține legătura cu prietenii și familia pentru sprijin emoțional.</li>
+            <li>Fă controale medicale regulate pentru a preveni problemele de sănătate.</li>
+        </ol>
+
+        <div class="media-container">
+            <h2>Video cu sfaturi de relaxare</h2>
+            <video controls>
+                <source src="https://www.youtube.com/watch?v=6ljlCon77y8&t=83s" type="video/mp4">
+                Browser-ul tău nu suportă elementul video.
+            </video>
+        </div>
+
+        <div class="references">
+            <p>Pentru mai multe sfaturi despre un stil de viață sănătos, vizitați <a href="https://www.healthline.com/nutrition/how-to-be-healthy" target="_blank">Healthline - Cum să fii sănătos</a>.</p>
+        </div>
+    </main>
+
+    
+    <main id="alimentatie" class="page">
+        <h1>Ghid de alimentație sănătoasă</h1>
+        <div class="image-container">
+            
+            <img src="https://www.sfatulmedicului.ro/external/uploads/upload/alimentatie_sanatoasa_diata_correlo.jpg" alt="Alimentație Sănătoasă">
+        </div>
+        <p>Alimentația sănătoasă este cheia pentru o viață lungă și plină de energie. O dietă echilibrată trebuie să includă o varietate de alimente din toate grupele alimentare: proteine, carbohidrați, grăsimi sănătoase, vitamine și minerale. Fiecare grupă de alimente aduce beneficii specifice organismului și contribuie la menținerea sănătății.</p>
+        <p>Proteinele sunt esențiale pentru construcția și repararea țesuturilor corporale. Sursele sănătoase de proteine includ carnea slabă, peștele, ouăle, leguminoasele și produsele lactate cu conținut scăzut de grăsimi. Carbohidrații complecși, precum cei găsiți în cerealele integrale, legume și fructe, oferă energie pe termen lung și ajută la menținerea unui nivel stabil al zahărului din sânge.</p>
+        <p>Grăsimile sănătoase, cum ar fi cele din avocado, nuci, semințe și uleiul de măsline, sunt importante pentru sănătatea creierului și a inimii. Vitaminele și mineralele, găsite în abundență în fructe și legume, sunt esențiale pentru susținerea funcțiilor corporale și pentru prevenirea deficiențelor nutriționale. O dietă variată și colorată este cel mai bun mod de a asigura aportul necesar de vitamine și minerale.</p>
+
+        <h2>Tabel cu alimente recomandate</h2>
+        <table>
+            <tr>
+                <th>Grupa alimentară</th>
+                <th>Exemple</th>
+                <th>Beneficii</th>
+            </tr>
+            <tr>
+                <td>Proteine</td>
+                <td>Pui, pește, ouă, linte, fasole</td>
+                <td>Construcție musculară, reparare țesuturi</td>
+            </tr>
+            <tr>
+                <td>Carbohidrați complecși</td>
+                <td>Orez brun, quinoa, pâine integrală</td>
+                <td>Energie pe termen lung, digestie sănătoasă</td>
+            </tr>
+            <tr>
+                <td>Grăsimi sănătoase</td>
+                <td>Avocado, nuci, semințe, ulei de măsline</td>
+                <td>Sănătate cardiovasculară, energie</td>
+            </tr>
+            <tr>
+                <td>Fructe și legume</td>
+                <td>Mere, banane, broccoli, spanac</td>
+                <td>Vitamine, minerale, antioxidanți</td>
+            </tr>
+        </table>
+
+        <div class="image-container">
+            <h2>Exemplu de masă sănătoasă</h2>
+           
+            <img src="https://ea.md/wp-content/uploads/2021/05/lanch-1-1280x720.jpg" alt="Masă sănătoasă">
+        </div>
+
+        <div class="references">
+            <p>Pentru mai multe informații despre o alimentație sănătoasă, vizitați <a href="https://www.eatright.org/" target="_blank">Academia de Nutriție și Dietetică</a>.</p>
+        </div>
+    </main>
+
+    <script>
+        function showPage(pageId) {
+           
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            document.getElementById(pageId).classList.add('active');
+
+           
+        }
+    </script>
+</body>
+</html>
